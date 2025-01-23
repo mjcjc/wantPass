@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 60px; /* 높이 추가 */
+}
+
+.nav button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px; /* 글씨 크기 키움 */
+    margin: 0 10px; /* 버튼 간 간격 */
+}
+
+.nav button:hover {
+    background-color: #575757;
+}
+.nav{
+    text-decoration: none;
+}
+a:link, a:visited {
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* 글씨 크기 키움 */
+    margin: 0 10px; /* 버튼 간 간격 */
+}
+.payment-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.title>a{
+    color:white;
+}

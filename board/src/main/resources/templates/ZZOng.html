@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 & 결제</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 중앙 정렬된 네비게이션 */
+        .nav {
+            display: flex;
+            justify-content: center; /* 중앙 정렬 */
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            height: 60px; /* 높이 추가 */
+        }
+
+        .nav button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px; /* 글씨 크기 키움 */
+            margin: 0 10px; /* 버튼 간 간격 */
+        }
+
+        .nav button:hover {
+            background-color: #575757;
+        }
+
+        /* 콘텐츠 영역 */
+        .content {
+            padding: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link, a:visited {
+            background-color: #333;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px; /* 글씨 크기 키움 */
+            margin: 0 10px; /* 버튼 간 간격 */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 중앙 정렬된 목차 -->
+    <div class="nav">
+        <a href="/board">게시판</a>
+        
+        <a href="/payment">결제</a> <!-- 클릭 이벤트 수정 -->
+    </div>
+
+    <!-- 콘텐츠 영역 -->
+    <div class="content">
+        <div id="payment" class="hidden">
+            <h2>결제</h2>
+            <button onclick="requestPayment()">결제하기</button>
+        </div>
+    </div>
+
+    <script>
+        // 탭 전환 함수
+        function callpayment(){
+            
+        }
+        function showSection(section) {
+            document.querySelectorAll('.content > div').forEach(div => div.classList.add('hidden'));
+            document.getElementById(section).classList.remove('hidden');
+        }
+
+        // 결제 요청 예제 (아임포트 연동)
+        function requestPayment() {
+            alert('결제 요청 로직 추가 필요!');
+            // 실제 아임포트 결제 로직 추가 가능
+        }
+    </script>
+</body>
+</html>

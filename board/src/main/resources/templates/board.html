@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시물 작성</title>
+    <link rel="stylesheet" type="text/css" href="/css/boardStyle.css">
+</head>
+<body>
+    <h1>게시물 작성</h1>
+    <form action="/submit-post" method="POST">
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">내용</label>
+        <textarea id="content" name="content" rows="10" required></textarea>
+
+        <input type="submit" value="게시">
+    </form>
+</body>
+</html>
