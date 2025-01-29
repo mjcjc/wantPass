@@ -35,6 +35,7 @@ public class UserEntity {
 
     public static UserEntity newUserEntity(UserDTO memberDTO) {
         UserEntity memberEntity = new UserEntity();
+        memberEntity.setId(memberDTO.getUser_id());
         memberEntity.setUserPhone(memberDTO.getUser_PhoneNum());
         memberEntity.setUserEmail(memberDTO.getUser_email());
         memberEntity.setUserPw(memberDTO.getUser_pw());
@@ -44,6 +45,7 @@ public class UserEntity {
 
     public static UserEntity toUpdateUserEntity(UserDTO memberDTO) {
         UserEntity memberEntity = new UserEntity();
+        memberEntity.setUser_UniqeId(memberDTO.getUser_uniqeId());
         memberEntity.setUserPhone(memberDTO.getUser_PhoneNum());
         memberEntity.setId(memberDTO.getUser_id());
         memberEntity.setUserEmail(memberDTO.getUser_email());

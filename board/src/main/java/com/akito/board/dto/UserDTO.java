@@ -15,6 +15,7 @@ public class UserDTO {
 
     public static UserDTO toUserDTO(UserEntity memberEntity) {
         UserDTO memberDTO = new UserDTO();
+        memberDTO.setUser_uniqeId(memberEntity.getUser_UniqeId());
         memberDTO.setUser_id(memberEntity.getId());
         memberDTO.setUser_pw(memberEntity.getUserPw());
         memberDTO.setUser_email(memberEntity.getUserEmail());
